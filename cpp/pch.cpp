@@ -13,12 +13,12 @@ LIBDLL int sum(int a, int b)
 	return a + b;
 }
 
-LIBDLL void showMessage(char* title, char* description)
+LIBDLL void showMessage(const char* title, const char* description)
 {
 	MessageBox(
 		NULL,
-		(LPCTSTR) title,
 		(LPCTSTR) description,
+		(LPCTSTR) title,
 		MB_ICONWARNING | MB_CANCELTRYCONTINUE | MB_DEFBUTTON2
 	);
 }
