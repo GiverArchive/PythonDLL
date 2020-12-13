@@ -3,7 +3,7 @@
 
 #define LIBDLL extern "C" __declspec(dllexport)
 
-int maxValue(int a, int b)
+LIBDLL int maxValue(int a, int b)
 {
 	return a > b ? a : b;
 }
