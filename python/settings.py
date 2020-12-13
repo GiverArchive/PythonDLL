@@ -1,0 +1,1 @@
+lib_path = 'D:\\Python\\DLL\\PythonDLL.dll'
