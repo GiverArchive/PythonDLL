@@ -3,8 +3,7 @@
 
 #define LIBDLL extern "C" __declspec(dllexport)
 
-
-LIBDLL int max(int a, int b)
+int maxValue(int a, int b)
 {
 	return a > b ? a : b;
 }
@@ -14,12 +13,12 @@ LIBDLL int sum(int a, int b)
 	return a + b;
 }
 
-LIBDLL void showMessage()
+LIBDLL void showMessage(char* title, char* description)
 {
 	MessageBox(
 		NULL,
-		(LPCTSTR) "Ola, mundo",
-		(LPCTSTR) "Hello World",
+		(LPCTSTR) title,
+		(LPCTSTR) description,
 		MB_ICONWARNING | MB_CANCELTRYCONTINUE | MB_DEFBUTTON2
 	);
 }
